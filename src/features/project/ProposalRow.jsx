@@ -23,8 +23,8 @@ const ProposalRow = ({ proposal, index }) => {
       <td>{proposal.duration} روز</td>
       <td>{proposal.price}</td>
       <td>
-        <span className={`badge ${statusStyle[status].className}`}>
-          {statusStyle[status].label}
+        <span className={`badge ${statusStyle[status]?.className}`}>
+          {statusStyle[status]?.label}
         </span>
       </td>
       <td>
@@ -37,7 +37,7 @@ const ProposalRow = ({ proposal, index }) => {
             onClose={() => setOpen(false)}
           />
         </Modal>
-        <button onClick={() => setOpen(false)}>تغییر وضعیت</button>
+        <button onClick={() => setOpen(true)}>تغییر وضعیت</button>
       </td>
     </Table.Row>
   )

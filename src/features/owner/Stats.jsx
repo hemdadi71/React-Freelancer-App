@@ -1,7 +1,7 @@
 import { HiOutlineViewGrid } from 'react-icons/hi'
 import { HiCurrencyDollar } from 'react-icons/hi'
 import { HiCollection } from 'react-icons/hi'
-import Stat from './Stat'
+import Stat from '../../ui/Stat'
 const Stats = ({ projects }) => {
   const numOfProjects = projects.length
   const numOfAcceptedProjects = projects.map(p => p.status === 2).length
